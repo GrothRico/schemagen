@@ -11,5 +11,5 @@ jobs:
     - uses: actions/setup-node@v3
       with:
         node-version: 20.x
-    - run: chmod +x ./ci.sh && ./ci.sh
+    - run: chmod +x ./scripts/ci.sh && ./scripts/ci.sh
       shell: bash
