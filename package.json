@@ -1,0 +1,22 @@
+{
+  "name": "schemagen",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "lint": "tsc",
+    "dev": "vitest",
+    "test": "vitest run",
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@tsconfig/strictest": "^2.0.5",
+    "@types/node": "^22.5.5",
+    "tsup": "^8.3.0",
+    "typescript": "^5.6.2",
+    "vitest": "^2.1.1"
+  }
+}
