@@ -2,14 +2,14 @@ name: CI
 on:
   push:
     branches:
-    - "**"
+      - "**"
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
-    - uses: actions/setup-node@v3
-      with:
-        node-version: 22.9.0
-    - run: chmod +x ./scripts/ci.sh && ./scripts/ci.sh
-      shell: bash
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
+          with: node-version: 22.9.0
+      - run: npm i -g npm@10.8.3
+      - run: chmod +x ./scripts/ci.sh && ./scripts/ci.sh
+          shell: bash
