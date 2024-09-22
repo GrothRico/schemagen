@@ -1,6 +1,6 @@
 #!/bin/sh
 
-npm ci
-npm run lint
-npm run test
-npm run build
+pnpm ci
+pnpm run lint
+pnpm run test
+pnpm run build
